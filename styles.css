@@ -29,26 +29,35 @@ opacity:90%;
 backdrop-filter: blur(15px);
 }
 .box{
+  display: flex;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 250%;
     color: white;
+    flex-wrap:wrap;
 
 }
 .boxr{
+  display: flex;
+  flex-wrap: wrap;
     font-family: 'Nunito Sans', sans-serif;
   width: 30%;
     height: 30%;
     border-radius: 100%;
 }
 
-.but{
+.but{ display: flex;
+  flex-wrap: wrap;
       font-family: 'Nunito Sans', sans-serif;
     display: flex;
     justify-content: space-evenly;
     width:100%;
 }
-.b1,.b2{
+.b1,.b2{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
     color: white;
     cursor: pointer;
     border:none;
@@ -75,12 +84,16 @@ font-family: 'Sora', sans-serif;
     color:black;
 }
 .occ{
+   display: flex;
+  flex-wrap: wrap;
      font-family: 'Nunito Sans', sans-serif;
     font-size:150%;
  
     color: white;
 }
 .c1{
+   display: flex;
+  flex-wrap: wrap;
     display: flex;
     position: absolute;
     align-self: flex-start;
@@ -101,6 +114,7 @@ font-family: 'Sora', sans-serif;
 }
 .c2{
     display: flex;
+  flex-wrap: wrap;
     position: absolute;
     align-self: flex-end;
     margin-left: 20%;
@@ -119,6 +133,7 @@ font-family: 'Sora', sans-serif;
 }
 .modal{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     width: 40%;
@@ -149,6 +164,7 @@ font-family: 'Sora', sans-serif;
 }
 .share{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
      padding-right: 3%;
     padding-top: 3%;
@@ -194,7 +210,7 @@ font-family: 'Sora', sans-serif;
     color: white;
 }
 
-.fb,.twitter,.insta,.discord,.whatsapp{
+.fb,.github,.insta,.discord,.whatsapp{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,12 +233,12 @@ font-family: 'Sora', sans-serif;
     color: #fff;
   }
   
-  #twitter {
-    color: #1c99e6;
-    border: 1px solid #1c99e6;
+  #github {
+    color: gray;
+    border: 1px solid gray;
   }
-  #twitter:hover {
-    background-color: #1c99e6;
+  #github:hover {
+    background-color: gray;
     color: #fff;
   }
   
@@ -273,3 +289,104 @@ span{
     opacity: 1;
     pointer-events: initial;
   }
+
+  @media(max-width:1110px){
+     .b1{
+    margin-bottom: 10%;
+  }
+  .b2{
+    width: 60%;
+  }
+  }
+  @media (max-width: 860px) {
+  .wrapper{
+    max-width: 250px;
+      width: 300px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .modal {
+      width: 70vw;
+    }
+    .share{
+      margin-bottom: 5%;
+    }
+  .c1,.c2{
+  height:120px;
+  width:120px;
+  
+}
+ .b1{
+    margin-bottom: 10%;
+  }
+   .b2{
+    width: 60%;
+  }
+  }
+
+  @media (max-width: 400px) {
+  
+.icon{
+  width: 30px;
+  height: 30px;
+}
+
+  .box{
+     font-size: 1.3rem;
+    }
+     .modal {
+      width: 100vw;
+    }
+    .b2{
+      width: 60%;
+    }
+    .b1{
+    margin-bottom: 10%;
+  }
+  }
+
+  @media (max-width:300px) {
+   .share{
+    font-size: large;
+   }
+    .b2{
+    width: 60%;
+  }
+  }
+
+@media (max-width:150px) {
+  .wrapper{
+    width: 100vw;
+
+  }
+  .b1{
+    margin-bottom: 10%;
+  }
+  .b2{
+    width: 80%;
+  }
+  .share{
+    font-size:small;
+  }
+  .share2{
+    font-size:small;
+  }
+  .b1,.b2{
+    font-size: small;
+  }
+  .modal{
+  width:100vh;
+  }
+  .but{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+
